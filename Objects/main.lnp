@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+".\objects\startup_stm32f10x_hd.o"
+".\objects\core_cm3.o"
+".\objects\system_stm32f10x.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\misc.o"
+".\objects\stm32f10x_tim.o"
+".\objects\stm32f10x_usart.o"
+".\objects\stm32f10x_it.o"
+".\objects\main.o"
+".\objects\delay.o"
+".\objects\lcd12864.o"
+".\objects\key1.o"
+".\objects\led.o"
+".\objects\lock.o"
+".\objects\iic.o"
+".\objects\at2402.o"
+".\objects\timer.o"
+".\objects\sys.o"
+".\objects\usart3.o"
+".\objects\as608.o"
+".\objects\key.o"
+--library_type=microlib --ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\main.map" -o .\Objects\main.axf
